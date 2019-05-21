@@ -6,10 +6,11 @@ import sys
 print("スーパーにやってきた。卵売り場はどこだろう？\n")
 
 def Search_Eggs():
+    #売り場を見つける判定の乱数と発見するまでの時間の乱数を分ける。未実装。
     past_time_search = random.randint(1, 20)
-    TimeLimit = 15                            #関数の中に数字を直接書かないで、変数にする
+    TimeLimit = 15                            
     i = 0
-    if past_time_search <= TimeLimit:　　　　 #変数はわかりやすくする
+    if past_time_search <= TimeLimit:         
         while i <= past_time_search:
             print("パック入りの卵を探している・・・・・・")
             time.sleep(1)
